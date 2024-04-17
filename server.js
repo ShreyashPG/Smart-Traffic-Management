@@ -3,6 +3,7 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 
+
 // Importing all Libraies that we installed using npm
 const express = require("express")
 const app = express()
@@ -12,6 +13,10 @@ const initializePassport = require("./passport-config")
 const flash = require("express-flash")
 const session = require("express-session")
 const methodOverride = require("method-override")
+app.use('/assets/', express.static('./assets'));
+app.use('/views/', express.static('./views'));
+app.use('/css/', express.static('./css'));
+
 
 initializePassport(
     passport,
@@ -26,8 +31,8 @@ const users = []
 app.use(express.urlencoded({extended: false}))
 app.use(flash())
 app.use(session({
-    secret: process.env.SESSION_SECRET,
-    resave: false, // We wont resave the session variable if nothing is changed
+    secret: "process.env.SESSION_SECRET", // Set this to a secret string
+    resave: false,
     saveUninitialized: false
 }))
 app.use(passport.initialize()) 
@@ -65,7 +70,12 @@ app.post("/register", checkNotAuthenticated, async (req, res) => {
 app.get('/', checkAuthenticated, (req, res) => {
     res.render("index.ejs", {name: req.user.name})
 })
-
+app.get('/aboutUs',(req,res)=>{
+    res.render("aboutUs.ejs")
+})
+app.get('/contactUs',(req,res)=>{
+    res.render("contactUs.ejs")
+})
 app.get('/login', checkNotAuthenticated, (req, res) => {
     res.render("login.ejs")
 })
