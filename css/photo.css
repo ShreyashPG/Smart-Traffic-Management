@@ -1,0 +1,109 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  background: url(./contact-us-customer-support-hotline.webp)no-repeat center;  
+  border: 2px solid black;
+  padding: 25px;
+  
+  background-repeat: no-repeat;
+  background-size: 100%;
+ 
+}
+
+.container {
+  text-align: center; 
+
+}
+
+h1 {
+    
+  font-size: 40px;
+  margin-top: 105px; 
+  text-shadow: 0px 2px 15px rgb(255, 255, 40); 
+  text-decoration:underline;
+  text-decoration-style:dotted;  
+  
+
+  #myDIV {
+    background-color:#FFFFFF;
+    width: 1200%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+  } 
+}
+
+  
+  #myDIV p {
+   color: #007bff;  
+  font-size: 40px;
+  margin-top: 45px; 
+    font-size: 42px;
+    color:blue; 
+    margin-top: 300px;
+    text-shadow: 0px 2px 15px rgb(40, 255, 65); 
+    text-decoration:underline;
+    text-decoration-style:dotted;  
+    text-decoration-color: purple; 
+    position: relative;
+    animation: mymove 4s infinite; /* Double the duration to account for both animations */
+  }
+  
+  @keyframes mymove {
+    0%, 100% {left: -300px;}
+    50% {left: 300px;}
+  }
+
+h2{
+  color:rgb(18, 3, 180); 
+  text-shadow:0px 0px 10px rgb(11, 223, 11)
+ 
+} 
+p{
+  color:blue; 
+  text-shadow: rgb(40, 47, 255);
+}
+
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  max-width: 2800px;
+  margin: 100px 0; /* Adjusted margin for spacing between heading and photos */
+}
+
+.contact-member {
+  text-align: center;
+  margin: 0 20px; /* Adjusted margin for spacing between contact members */
+}
+
+.contact-member img{
+  width: 175px;
+  height: 175px;
+  border-end-end-radius:20%;
+  box-shadow: 0px 10px 20px rgb(251, 0, 255); 
+}
+.contact-member:hover img{
+  box-shadow: 0px 10px 20px rgb(255, 242, 0);
+}
+.contact-member h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.contact-member p {
+  font-size: 0.8em;
+  color: #555; 
+  color:rgb(246, 255, 0);  
+  margin-bottom: 22
+  0px;
+ 
+} 
