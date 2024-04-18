@@ -22,7 +22,7 @@ function fetchData(){
       const inputData = document.getElementById('com-box').value;
       
       // Replace with your Node.js server URL
-      const apiUrl = 'http://localhost:8000/api/data';
+      const apiUrl = 'http://localhost:3000/api/data';
     
       fetch(apiUrl, {
         method: 'POST',
