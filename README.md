@@ -34,5 +34,4 @@ The Smart Traffic Management System is designed to address irregular parking iss
 ## Contributing
 Contributions are welcome! If you'd like to improve this project, feel free to submit pull requests.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
