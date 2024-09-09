@@ -155,7 +155,7 @@ const sendSms = async (body , conNum) => {
 
 
 //initializing the app from the express . . . 
-//const app = express();
+// const app = express();
 
 app.use(bodyParser.json());
 app.use(cors());
@@ -198,14 +198,14 @@ app.post('/api/data', async (req, res) => {
 
 
 // / // Define a route for the root URL
-// app.get('/', (req, res) => {
-//   res.send('Welcome to the Node.js server!');
-// });
+app.get('/', (req, res) => {
+  res.send('Welcome to the Node.js server!');
+});
 
 
-// app.listen(db_config.PORT, () => {
-//   console.log(`Server is running on port `);
-// });
+app.listen(db_config.PORT, () => {
+  console.log(`Server is running on port `);
+});
 
 
 
